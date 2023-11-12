@@ -1,4 +1,4 @@
-var posts=["2023/09/10/hello-world/","2023/11/11/git命令/"];function toRandomPost(){
+var posts=["2023/11/11/git命令/","2023/09/10/hello-world/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };var friend_link_list=[];
     var refreshNum = 1;

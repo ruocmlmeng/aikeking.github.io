@@ -1,11 +1,11 @@
 <!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>音乐馆 | aikeking</title><meta name="keywords" content="Hexo,Java,JavaScript,html5,css3,Jquery,NodeJs,github,css,js,html,AnZhiYu,博客,学习"><meta name="author" content="汪俊"><meta name="copyright" content="汪俊"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="音乐馆"><meta name="application-name" content="音乐馆"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="website"><meta property="og:title" content="音乐馆"><meta property="og:url" content="http://example.com/music/index.html"><meta property="og:site_name" content="aikeking"><meta property="og:description" content="音乐馆"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="http://example.com/images/avatar3.jpg"><meta property="article:author" content="汪俊"><meta property="article:tag" content="Hexo,Java,JavaScript,html5,css3,Jquery,NodeJs,github,css,js,html,AnZhiYu,博客,学习"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="http://example.com/images/avatar3.jpg"><meta name="description" content="音乐馆"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://example.com/music/"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
-  linkPageTop: {"enable":true,"title":"与数百名博主无限进步","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"},
+  linkPageTop: undefined,
   peoplecanvas: undefined,
   postHeadAiDescription: {"enable":true,"gptName":"wangjun","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
   diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
   LA51: undefined,
   greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
-  twikooEnvId: '',
+  twikooEnvId: 'https://blog-commit-psi.vercel.app',
   commentBarrageConfig:undefined,
   root: '/',
   preloader: {"source":3},
@@ -377,7 +377,7 @@ queueMicrotask(() => {
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: '',
+        envId: 'https://blog-commit-psi.vercel.app',
         region: '',
         pageSize: 6,
         includeReply: true
